@@ -47,7 +47,7 @@ app.get("/weather", (req,res)=>{
 
 app.get("*", (req,res)=>{ // If any of route nhi match krega 
     res.render("error", {
-        errorMsg: 'Opps! Page Not Found' // It will be rendered while displaying error.hbs
+        errorMsg: 'Error Msg:- Opps! Page Not Found' // It will be rendered while displaying error.hbs
     });
 })
 
