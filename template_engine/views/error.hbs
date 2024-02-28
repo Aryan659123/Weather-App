@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    {{>header_links}}
+    {{>headerLinks}}
 </head>
+
 <body>
-
     {{>navbar}}
-    <!-- Main Header Class -->
 
-    <div class="container-fluid main_header">
+    <!-- main header  -->
+    <div class="main_header">
+
         <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class = "row">
-                    <div class="col-md-12 col-12 main_header_left align-items-center">
-                        <figure class="error_img">
-                            <img src="styles/images/error.jpg" alt="OEHOE" class="img-fluid" title="thappa">
-                        </figure>
-
-                        <p>Welcome to RK World</p>
-                        <h1>{{errorMsg}}</h1>
-                        <a href="/" target="_blank"><button>Go Back</button></a>
-                    </div>
-
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class=" main_header_left align-items-center">
+                    <figure class="errimg">
+                        <img src="styles/images/404.png" alt="Error" class="img-fluid">
+                    </figure>
+                    <p>Sorry, Wrong Page accessed</p>
+                    <h1>{{errorMsg}}</h1>
+                    <a href="/"><button>Go Back</button></a>
                 </div>
             </div>
+
         </div>
     </div>
 
-  {{>footer}}
+    </div>
 
+    <!-- footer -->
+    {{>footer}}
 </body>
-</html>
 
+</html>

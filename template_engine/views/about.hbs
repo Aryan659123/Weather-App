@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    {{>header_links}}
+    {{>headerLinks}}
 </head>
+
 <body>
-
     {{>navbar}}
-    <!-- Main Header Class -->
 
-    <div class="container-fluid main_header">
+    <!-- main header  -->
+    <div class="main_header">
+
         <div class="row">
             <div class="col-md-10 col-12 mx-auto">
-                <div class = "row">
-                    <!-- left side div -->
-                    <div class="col-md-6 col-12 main_header_right align-items-center">
+                <div class="row">
+                    <div class="col-md-6 col-12 main_header_right">
                         <figure>
-                            <img src="styles/images/about.jpg" alt="OEHOE" class="img-fluid" title="thappa">
+                            <img src="styles/images/about.png" alt="About Page" class="img-fluid">
                         </figure>
+
                     </div>
 
-                    <!-- right side div -->
                     <div class="col-md-6 col-12 main_header_left">
-                        <p>Welcome to weather app</p>
-                        <h1>Get The Latest <span class="text_clr">Weather</span> Info of Your City </h1>
-                        <a href="http://www.google.com" target="_blank"><button>About Me</button></a>
+                        <p>Welcome to Weather App</p>
+                        <h1>Made with <BR><span class="txt_clr">HBS, CSS, BOOTSTRAP, JS, REST API, EXPRESS-JS </span> FRONT-END and BACK-END</h1>
+                        <a href="https://www.linkedin.com/in/aryan-nagpal-b70024217/" target="_blank"><button>About Me</button></a>
                     </div>
-
                 </div>
             </div>
         </div>
+
     </div>
 
-  {{>footer}}
-
+    <!-- footer -->
+    {{>footer}}
 </body>
-</html>
 
+</html>

@@ -5,7 +5,7 @@ const path = require('path');
 
 // To use static content 
 // like html, css, js
-const static_path = path.join(__dirname, "../public"); 
+const static_path = path.join(__dirname, "../public/static"); 
 app.use(express.static(static_path));
 // But bcs hmm dynamic website bnna rhe from hbs 
 // So we have to set view engine to hbs 
